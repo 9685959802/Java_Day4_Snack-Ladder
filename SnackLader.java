@@ -14,6 +14,12 @@ public static void main(String []args) {
 	System.out.println("Number of Players " + player);
 	System.out.println("Position : On Square" + position);
 	
-	
+	//uc2
+		SnackLader dice = new SnackLader();
+		dice.diceRolled();
+	}
+	void diceRolled() {
+			int new_position = (int) ((Math.random() *6)+1);
+			System.out.println("Player moved to "+ new_position);
 }
 }
