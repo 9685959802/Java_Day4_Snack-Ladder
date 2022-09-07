@@ -8,6 +8,12 @@ public static void main(String []args) {
 	
 	byte player = 1;
 	
+	//uc1
+	
+	System.out.println("Game Starts ...");
+	System.out.println("Number of Players " + player);
+	System.out.println("Position : On Square" + position);
+	
 	
 }
 }
