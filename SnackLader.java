@@ -93,7 +93,51 @@ case 2 : System.out.println("Oops...snake there");
 		 }
 		 if(positionUC5 == 100)
 			 System.out.println("Congrates player one has won :)");
-	 }}
+	 }
+	 void countDiceNum() {
+		 int positionUC6 = (int) ((Math.random() * 6) + 1);
+		 int count = 1;
+		 while(positionUC6 <= 100) {
+			 
+			 positionUC6 = positionUC6 + positionUC6;  
+			 count++;
+		      }
+		 System.out.println("Dice thrown " + (count+1) + " numbers of time to reach 100");
+		 }
+	 
+	static void playerOne(){
+		
+		String player1name;
+		
+		int positionUC7 = (int) ((Math.random() * 6) + 1);
+		for(int i = 0; positionUC7 < 100 ; i++)
+		{
+			int newposition = (int) ((Math.random() * 6) + 1); 
+			if(positionUC7 + newposition <= 100)
+			{
+				positionUC7 = positionUC7 + newposition;
+			}
+		}
+		
+		String player2name;
+		
+		int positionUC8 = (int) ((Math.random() * 6) + 1);
+		for(int i = 0; positionUC8 < 100 ; i++)
+		{
+			int newposition = (int) ((Math.random() * 6) + 1); 
+			if(positionUC8 + newposition <= 100)
+			{
+				positionUC8 = positionUC8 + newposition;
+			}
+		}
+		if(positionUC7 > positionUC8)
+			System.out.println("Congrates " + player1name + " you won");
+		else
+			System.out.println("Congrates " + player2name + " you won");
+		
+	    }
+	  }
+}
 	 
 		
 	
