@@ -23,7 +23,7 @@ public static void main(String []args) {
 		
 		
 	SnackLader opt = new SnackLader();
-	    opt.optionCheck();
+	    opt.OptionCheck();
 
 }
 void OptionCheck() {
@@ -74,7 +74,27 @@ case 2 : System.out.println("Oops...snake there");
 	         System.out.println("Position : On Square [" + positionUC3 + "]");
 	         break;
 			}
-	}}
+	}
+	void tillHundred() {
+		 int positionUC4 = (int) ((Math.random() * 6) + 1);
+		 do {
+			 positionUC4 = positionUC4 + positionUC4; 
+//			 System.out.println("Position : On Square [" + positionUC4 + "]");
+		 }while(positionUC4 < 99);
+		 if(positionUC4 >= 100)
+			 System.out.println("Congrates you reached On Square : 100");
+	 }
+	 
+	 void exactHundred() {
+		 int positionUC5 = 1;
+		 for (int i = 1; i <= 100; i++)
+		 {
+			 positionUC5 = i;
+		 }
+		 if(positionUC5 == 100)
+			 System.out.println("Congrates player one has won :)");
+	 }}
+	 
 		
 	
 
